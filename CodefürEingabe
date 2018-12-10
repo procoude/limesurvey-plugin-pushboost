@@ -1,0 +1,46 @@
+<form action="seite2.php" method="post">
+Wie viele Versionen von Frage 1 moechtest du erstellen?: <input type="text" name="anzahl" /><br />
+Wie viele Versionen von Frage 2 moechtest du erstellen?: <input type="text" name="anzahl" /><br />
+Auf welche Frage soll diese Version folgen?: 			 <input type="text" name="frage" /><br />
+Wie viele Versionen von Frage 3 moechtest du erstellen?: <input type="text" name="anzahl" /><br />
+Auf welche Frage soll diese Version folgen?: 			 <input type="text" name="frage" /><br />
+<input type="Submit" value="Absenden" />
+</form>
+
+<p>Wie viele Versionen der Frage haben Sie?</p>
+<select name="size2">
+<option selected >1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+</select>
+
+
+<p>Wie viele Fragen haben Sie?</p>
+<input type="text"
+name="meintextfeld"
+value="Text eingeben" 
+<br />
+<p>Wie viele Gruppen haben Sie?</p>
+<input type="text"
+name="meintextfeld"
+value="Text eingeben" />
+
+
+<form action="abstimmen.php" method="post">
+Frage?
+<br /><br />
+<input type="radio" name="Antwort" value="A1"> A1
+<br />
+<input type="radio" name="Antwort" value="A2"> A2
+<br />
+<input type="radio" name="Antwort" value="A3"> A3
+<br />
+<input type="radio" name="Antwort" value="A4"> A4
+<br /><br />
+<input type="submit" value="Absenden">
+</form>
