@@ -1,0 +1,23 @@
+File 1:
+
+<form action="Speichern2.php" method="post">
+Wie viele Gruppen moechtest du erstellen?: <input type="text" name="anzahl" /><br />
+<input type="Submit" value="Absenden" />
+</form>
+
+File 2:
+
+<?php
+$anzahl= $_POST["anzahl"];
+echo "Gruppenanzahl: $anzahl<br>";
+
+function Ausgabe(){
+    global $anzahl;
+    for ($i = 0; $i < $anzahl; $i++) {
+        echo "Fragegruppe erstellt";
+    }
+}
+Ausgabe();
+
+
+?>
