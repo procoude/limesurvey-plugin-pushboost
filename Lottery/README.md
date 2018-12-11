@@ -55,7 +55,8 @@ Versioning
 
 We use SemVer for versioning. For the versions available, see the tags on this repository.
 
-Authors
+## Authors
+
 The plugin has been developed by the research chair [Professional Communication in Electronic Media / Social Media, University of Duisburg Essen](https://www.uni-due.de/proco/index_en.php)
 
     Prof. Dr. Stefan Stieglitz - Professor
