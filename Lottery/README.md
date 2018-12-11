@@ -54,7 +54,9 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 Versioning
 
 We use SemVer for versioning. For the versions available, see the tags on this repository.
+
 Authors
+The plugin has been developed by the research chair [Professional Communication in Electronic Media / Social Media, University of Duisburg Essen](https://www.uni-due.de/proco/index_en.php)
 
     Billie Thompson - Initial work - PurpleBooth
 
