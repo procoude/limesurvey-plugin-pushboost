@@ -2,6 +2,10 @@
 
 The plugin helps you to randomly choose a winner for your lottery at the end of your online-survey. The participants will provide their email-addresses at the end of the experiment which will be saved in an extra data base to guarantee the participants' anonymity. At the end of the survey, you can choose the number of winners for your lottery and the plugin will send you an email including the addresses of the lucky-ones. 
 
+'Quelltext' 
+
+* Aufzählung
+
 Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
