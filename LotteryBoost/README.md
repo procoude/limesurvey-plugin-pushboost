@@ -65,4 +65,6 @@ The plugin has been developed by the research chair [Professional Communication 
     Melina Paßfeld
     Andere Studenten
 
+## License
 
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
