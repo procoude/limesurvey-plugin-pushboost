@@ -58,14 +58,10 @@ We use SemVer for versioning. For the versions available, see the tags on this r
 Authors
 The plugin has been developed by the research chair [Professional Communication in Electronic Media / Social Media, University of Duisburg Essen](https://www.uni-due.de/proco/index_en.php)
 
-    Billie Thompson - Initial work - PurpleBooth
+    Prof. Dr. Stefan Stieglitz - Professor
+    Tobias Kroll - initial work
+    Eric 
+    Melina Paßfeld
+    Andere Studenten
 
-See also the list of contributors who participated in this project.
-License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
-Acknowledgments
-
-    Hat tip to anyone whose code was used
-    Inspiration
-    etc
