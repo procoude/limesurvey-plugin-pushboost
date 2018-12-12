@@ -38,23 +38,23 @@ the same web server that hosts the LimeSurvey process.
                     'default'=>1,
                     "current" => $this->get("bCopyGeneralSettings", "Survey", $event->get("survey"))
                  ),
-                "bActive" => array(
-                    'type'=>'boolean',
-                    'label'=>'Do you want to activate notifications for this survey?',
-                    'default'=>1,
-                    "current" => $this->get("bActive", "Survey", $event->get("survey"))
-                ),
-                "sEMailAddress" => array(
-                    "type" => "string",
-                    "label" => "To which E-Mail-Address should the Notifications be send for this survey? <br> (e.g.: admin@mail.com)",
-                    "current" => $this->get("sEMailAddress", "Survey", $event->get("survey"))
-                ),
-                "sEMailText" => array(
-                    "type" => "text",
-                    "label" => "Which message do you want to set for your notifications?",
-                    "help" => "Type the text for the e-mail.",
-                    "current" => $this->get("sEMailText", "Survey", $event->get("survey"))
-                ), ...
+                 "bActive" => array(
+                    'type'=>'boolean',
+                    'label'=>'Do you want to activate notifications for this survey?',
+                    'default'=>1,
+                    "current" => $this->get("bActive", "Survey", $event->get("survey"))
+                ),
+                "sEMailAddress" => array(
+                    "type" => "string",
+                    "label" => "To which E-Mail-Address should the Notifications be send for this survey? <br> (e.g.: admin@mail.com)",
+                    "current" => $this->get("sEMailAddress", "Survey", $event->get("survey"))
+                    ),
+                "sEMailText" => array(
+                    "type" => "text",
+                    "label" => "Which message do you want to set for your notifications?",
+                    "help" => "Type the text for the e-mail.",
+                    "current" => $this->get("sEMailText", "Survey", $event->get("survey"))
+                ), ...
 
 
 ## Authors
