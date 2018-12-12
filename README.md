@@ -14,8 +14,7 @@ the same web server that hosts the LimeSurvey process.
 
     1.  LimeSurvey Event        PushBoost is activated
         Cron Service 
-    2.
-        sendEmail()             Main function
+    2.  sendEmail()             Main function
     
     Additional functions:
         isPluginActive()        Proves if the plugin is active
@@ -28,18 +27,36 @@ the same web server that hosts the LimeSurvey process.
 
 ## Code Examples
 
-    //SQL-Code
-    //Duplication checked by PRIMARY KEY - participants cannot enter their email-addresses twice
-    $this->connection->createCommand("CREATE TABLE IF NOT EXISTS $wingametable (mails VARCHAR(150) PRIMARY KEY NOT NULL);)->execute();
-    
-    //Move email-address from the survey table into the new created table
-     $this->connection->createCommand("INSERT INTO $wingametable('mails') SELECT $sSgqaCode FROM $tableName WHERE $sSgqaCode IS NOT               NULL;")->excute();
-     
-     //Set email-addresses in survey table NULL
-     $this->connection->createCommand("UPDATE $tableName SET $sSgqaCode = NULL;")->execute();
-     
-     //Order the content of the new table alphabetically
-     $this->connection->createCommand("SELECT * FROM $wingametable ORDER BY 'mails';")->execute();
+    public function beforeSurveySettings()
+    {
+        $event = $this->event;
+        $event->set("surveysettings.{$this->id}", array(
+            "name" => get_class($this),
+            "settings" => array(
+                "bCopyGeneralSettings" => array(
+                    'type'=>'boolean',
+                    'label'=>'Do you want to overwrite the gereral plugin settings?',
+                    'default'=>1,
+                    "current" => $this->get("bCopyGeneralSettings", "Survey", $event->get("survey"))
+                ),
+                "bActive" => array(
+                    'type'=>'boolean',
+                    'label'=>'Do you want to activate notifications for this survey?',
+                    'default'=>1,
+                    "current" => $this->get("bActive", "Survey", $event->get("survey"))
+                ),
+                "sEMailAddress" => array(
+                    "type" => "string",
+                    "label" => "To which E-Mail-Address should the Notifications be send for this survey? <br> (e.g.: admin@mail.com)",
+                    "current" => $this->get("sEMailAddress", "Survey", $event->get("survey"))
+                ),
+                "sEMailText" => array(
+                    "type" => "text",
+                    "label" => "Which message do you want to set for your notifications?",
+                    "help" => "Type the text for the e-mail.",
+                    "current" => $this->get("sEMailText", "Survey", $event->get("survey"))
+                ), ...
+
 
 ## Authors
 
