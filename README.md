@@ -12,19 +12,19 @@ the same web server that hosts the LimeSurvey process.
 
 ## How it works
 
-1.
-    LimeSurvey Event        PushBoost is activated
-    Cron Service 
-2.
-    sendEmail()             Main function
+    1.  LimeSurvey Event        PushBoost is activated
+        Cron Service 
+    2.
+        sendEmail()             Main function
     
     Additional functions:
-    isPluginActive()        Proves if the plugin is active
-    ifToUseGlobalSettings() Proves if the global or survey settings are supposed to be used
-    isMilestoneReached()    Proves if milestone is reached
-3.
-    Sending Email
-
+        isPluginActive()        Proves if the plugin is active
+        ifToUseGlobalSettings() Proves if the global or survey settings are supposed to be used
+        isMilestoneReached()    Proves if milestone is reached
+    3.
+        Sending Email
+    
+    
 
 ## Code Examples
 
