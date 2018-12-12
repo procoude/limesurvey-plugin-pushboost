@@ -32,7 +32,7 @@ the same web server that hosts the LimeSurvey process.
         $event->set("surveysettings.{$this->id}", array(
             "name" => get_class($this),
             "settings" => array(
-                "bCopyGeneralSettings" => array(
+                "bCopyGeneralSettings" => array(
                     'type'=>'boolean',
                     'label'=>'Do you want to overwrite the gereral plugin settings?',
                     'default'=>1,
