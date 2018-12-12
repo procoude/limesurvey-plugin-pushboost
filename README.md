@@ -1,59 +1,45 @@
 # PushBoost
 
-The limesurvey-plugin PushBoost helps you as the leader of a survey to keep up-to-date. You will receive an email everytime you reached a milestone concerning the number of participants. The plugin will let you know how many people participated in your online-survey. You can choose yourself how often you would like to receive such an email (e.g. every 10th participant, every 50th and so on). 
+The LimeSurvey-plugin PushBoost helps you as the leader of a survey to keep up-to-date. You will receive an email everytime you reached a milestone concerning the number of participants. The plugin will let you know how many people participated in your online-survey. You can choose yourself how often you would like to receive such an email (e.g. every 10th participant, every 50th and so on).
 
-Getting Started
+## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-Prerequisites
+LimeSurvey is a service for online-surveys. The data can be stored local which allows control over the examined data. LimeSurvey provides a notification function where the survey leader gets an email every time a participant finished the online-survey. PushBoost extends this function. It allows administrators to define and individually customize the notifications. The administrators can decide if they prefer receiving a notification after a defined milestone, a certain number of participants or a certain amount of time. By these customizations, the administrator will not get any spam but wanted notifications. Those notifications will be send via mail which is the most convenient way since the administrator does not have to log in to get the information. For the time-dependent
+notifications, it is first necessary for the administrator to activate the CronService on the
+the same web server that hosts the LimeSurvey process.
 
-What things you need to install the software and how to install them
+## How to use it
 
-Give examples
+## How it works
 
-Installing
+1.
+    LimeSurvey Event        PushBoost is activated
+    Cron Service 
+2.
+    sendEmail()             Main function
+    
+    Additional functions:
+    isPluginActive()        Proves if the plugin is active
+    ifToUseGlobalSettings() Proves if the global or survey settings are supposed to be used
+    isMilestoneReached()    Proves if milestone is reached
+3.
+    Sending Email
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+## Code Examples
 
-Give the example
-
-And repeat
-
-until finished
-
-End with an example of getting some data out of the system or using it for a little demo
-Running the tests
-
-Explain how to run the automated tests for this system
-Break down into end to end tests
-
-Explain what these tests test and why
-
-Give an example
-
-And coding style tests
-
-Explain what these tests test and why
-
-Give an example
-
-Deployment
-
-Add additional notes about how to deploy this on a live system
-Built With
-
-    Dropwizard - The web framework used
-    Maven - Dependency Management
-    ROME - Used to generate RSS Feeds
-
-Contributing
-
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-Versioning
-
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+    //SQL-Code
+    //Duplication checked by PRIMARY KEY - participants cannot enter their email-addresses twice
+    $this->connection->createCommand("CREATE TABLE IF NOT EXISTS $wingametable (mails VARCHAR(150) PRIMARY KEY NOT NULL);)->execute();
+    
+    //Move email-address from the survey table into the new created table
+     $this->connection->createCommand("INSERT INTO $wingametable('mails') SELECT $sSgqaCode FROM $tableName WHERE $sSgqaCode IS NOT               NULL;")->excute();
+     
+     //Set email-addresses in survey table NULL
+     $this->connection->createCommand("UPDATE $tableName SET $sSgqaCode = NULL;")->execute();
+     
+     //Order the content of the new table alphabetically
+     $this->connection->createCommand("SELECT * FROM $wingametable ORDER BY 'mails';")->execute();
 
 ## Authors
 
