@@ -27,18 +27,17 @@ the same web server that hosts the LimeSurvey process.
 
 ## Code Examples
 
-    public function beforeSurveySettings()
-    {
-        $event = $this->event;
-        $event->set("surveysettings.{$this->id}", array(
-            "name" => get_class($this),
-            "settings" => array(
+    public function beforeSurveySettings() {
+        $event = $this->event;
+        $event->set("surveysettings.{$this->id}", array(
+            "name" => get_class($this),
+            "settings" => array(
                 "bCopyGeneralSettings" => array(
-                    'type'=>'boolean',
-                    'label'=>'Do you want to overwrite the gereral plugin settings?',
-                    'default'=>1,
-                    "current" => $this->get("bCopyGeneralSettings", "Survey", $event->get("survey"))
-                ),
+                    'type'=>'boolean',
+                    'label'=>'Do you want to overwrite the gereral plugin settings?',
+                    'default'=>1,
+                    "current" => $this->get("bCopyGeneralSettings", "Survey", $event->get("survey"))
+                 ),
                 "bActive" => array(
                     'type'=>'boolean',
                     'label'=>'Do you want to activate notifications for this survey?',
