@@ -61,12 +61,7 @@ the same web server that hosts the LimeSurvey process.
 
 The plugin has been developed by the research chair [Professional Communication in Electronic Media / Social Media, University of Duisburg Essen](https://www.uni-due.de/proco/index_en.php)
 
-    Prof. Dr. Stefan Stieglitz - Professor
-    Tobias Kroll - initial work
-    Eric 
-    Melina Paßfeld
-    Andere Studenten
 
 ## License
 
-See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
+This plugin is licenced under the GPL 2.0. The LimeSurvey Logo ista registered trademarks of LimeSurvey GmbH, Hamburg, Germany.
