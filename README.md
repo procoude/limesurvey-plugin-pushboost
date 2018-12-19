@@ -1,12 +1,10 @@
 # PushBoost
 
-The LimeSurvey-plugin PushBoost helps you as the leader of a survey to keep up-to-date. You will receive an email everytime you reached a milestone concerning the number of participants. The plugin will let you know how many people participated in your online-survey. You can choose yourself how often you would like to receive such an email (e.g. every 10th participant, every 50th and so on).
+The LimeSurvey-plugin PushBoost helps a survey administrator to keep up-to-date. You will receive an email everytime you reached a milestone concerning the number of participants. The plugin will let you know how many people participated in your survey. You can choose how often you want to receive an email (e.g. every 10th participant, every 50th and so on).
 
 ## Getting Started
 
-LimeSurvey is a service for online-surveys. The data can be stored local which allows control over the examined data. LimeSurvey provides a notification function where the survey leader gets an email every time a participant finished the online-survey. PushBoost extends this function. It allows administrators to define and individually customize the notifications. The administrators can decide if they prefer receiving a notification after a defined milestone, a certain number of participants or a certain amount of time. By these customizations, the administrator will not get any spam but wanted notifications. Those notifications will be send via mail which is the most convenient way since the administrator does not have to log in to get the information. For the time-dependent
-notifications, it is first necessary for the administrator to activate the CronService on the
-the same web server that hosts the LimeSurvey process.
+LimeSurvey is a web software for online surveys. The data can be stored on-premise which allows control as regards data safety and privacy requirements. LimeSurvey provides a notification function where the survey administrator gets an email every time a participant finished the online survey. PushBoost extends this function. It allows administrators to define and individually customize the notifications. The administrators can decide if they prefer receiving a notification after a defined milestone, a certain number of participants or a certain amount of time. The notifications will be send via mail which is the most convenient way since the administrator does not have to log in to get the information. For the time-dependent notifications, further configurations of a cron job is necessary.
 
 ## How to use it
 
@@ -64,4 +62,4 @@ The plugin has been developed by the research chair [Professional Communication 
 
 ## License
 
-This plugin is licenced under the GPL 2.0. The LimeSurvey Logo ista registered trademarks of LimeSurvey GmbH, Hamburg, Germany.
+This plugin is licenced under the GPL 2.0. The LimeSurvey Logo is a registered trademarks of LimeSurvey GmbH, Hamburg, Germany.
