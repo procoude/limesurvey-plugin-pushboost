@@ -17,6 +17,22 @@ The administrators can decide if they prefer receiving a notification after a de
 The notifications will be send via mail which is the most convenient way since the administrator does not have to log in to get the information.
 For the time-dependent notifications, further configurations of a cron job is necessary.
 
+## How to use it
+
+## How to use it
+
+To use this Plugin, you can either download PushBoost in one zip file and then unzip it in your LimeSurvey installation. Or, if you prefer, you can use GitHub and fork LotteryBoost via GIT to use it. At the end, make sure that you activate the PluginManager in your Limesurvey settings.
+
+Via ZIP dowload
+
+    Get the PushBoost file and unzip it
+    Move the file included to plugins/limesurvey-plugin-lotteryboost directory
+
+Via GIT
+
+    Go to your LimeSurvey Directory 
+    Clone in plugins/limesurvey-plugin-lotteryboost directory
+
 ## How it works
 
     1.  LimeSurvey Event        PushBoost is activated
