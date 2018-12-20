@@ -17,7 +17,6 @@ The administrators can decide if they prefer receiving a notification after a de
 The notifications will be send via mail which is the most convenient way since the administrator does not have to log in to get the information.
 For the time-dependent notifications, further configurations of a cron job is necessary.
 
-## How to use it
 
 ## How to use it
 
