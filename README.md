@@ -32,7 +32,7 @@ Via GIT
     Go to your LimeSurvey Directory 
     Clone in plugins/limesurvey-plugin-lotteryboost directory
 
-In case you have further questions or trubbles to install the Plugin, this [Limesurvey protocol] (https://manual.limesurvey.org/Plugin_manager) might help you and answer your questions.
+In case you have further questions or trubbles to install the Plugin, this [Limesurvey protocol](https://manual.limesurvey.org/Plugin_manager) might help you and answer your questions.
 
 ## How it works
 
