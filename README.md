@@ -18,40 +18,21 @@ The notifications will be send via mail which is the most convenient way since t
 For the time-dependent notifications, further configurations of a cron job is necessary.
 
 
-## How to use it
+## How to install the plugin
 
 To use this Plugin, you can either download PushBoost in one zip file and then unzip it in your LimeSurvey installation. Or, if you prefer, you can use GitHub and fork LotteryBoost via GIT to use it. At the end, make sure that you activate the PluginManager in your Limesurvey settings.
 
 Via ZIP dowload
 
     Get the PushBoost file and unzip it
-    Move the file included to plugins/limesurvey-plugin-lotteryboost directory
+    Move the file included to the your LimeSurvey's /plugins directory
 
 Via GIT
 
     Go to your LimeSurvey Directory 
-    Clone in plugins/limesurvey-plugin-lotteryboost directory
+    Clone in /plugins directory
 
-In case you have further questions or trubbles to install the Plugin, this [Limesurvey protocol](https://manual.limesurvey.org/Plugin_manager) might help you and answer your questions.
-
-## How it works
-
-    1.  LimeSurvey Event        PushBoost is activated
-        Cron Service 
-    2.  sendEmail()             Main function
-    
-    Additional functions:
-        isPluginActive()        Proves if the plugin is active
-        ifToUseGlobalSettings() Proves if the global or survey settings are supposed to be used
-        isMilestoneReached()    Proves if milestone is reached
-    3.
-        Sending Email
-    
-## Disclaimer / Status of the plugin
-
-In case you decide to use this Plugin, you understand that PushBoost is not suitable for a productoin environment. Further, you understand and agree that we will not be liable to you or any third party for any loss of profits, use, goodwill, or - in this case especially important - data, or for any incidental, indirect, special, consequential or exemplary damages, however arising.
-
-Our liability is limited whether or not we have been informed of the possibility of such damages, and even if a remedy set forth in this Agreement is found to have failed of its essential purpose. We will have no liability for any failure or delay due to matters beyond our reasonable control.
+In case you have further questions or trouble to install the plugin, this [Limesurvey protocol](https://manual.limesurvey.org/Plugin_manager) might help you and answer your questions.
 
 ## Code Examples
 ```php
@@ -78,6 +59,14 @@ private function isMilestoneReached($sSurveyId,$numberParticipants){
 	    }rent" => $this->get("sEMailText", "Survey", $event->get("survey"))
 	),
 ```
+
+## Disclaimer / Status of the plugin
+
+In case you decide to use this plugin, you understand that PushBoost is potentially not yet suitable for a productoin environment.
+Further, you understand and agree that we will not be liable to you or any third party for any loss of profits, use, goodwill, or - in this case especially important - data, or for any incidental, indirect, special, consequential or exemplary damages, however arising.
+
+Our liability is limited whether or not we have been informed of the possibility of such damages, and even if a remedy set forth in this Agreement is found to have failed of its essential purpose.
+We will have no liability for any failure or delay due to matters beyond our reasonable control.
 
 ## Authors
 
